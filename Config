@@ -1,0 +1,10 @@
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+               maxThreads="150" SSLEnabled="true"
+               maxParameterCount="1000"
+>
+<UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
+<SSLHostConfig>
+<Certificate certificateKeystoreFile="/opt/apache-tomcat-10.1.33/conf/keystore.p12"
+                         certificateKeystorePassword="Dena_9826" type="RSA" />
+</SSLHostConfig>
+</Connector>
